@@ -1,11 +1,6 @@
 /vendor
-node_modules
-helpers/config/cyml.go
-templates/templates.go
 .envrc
-/doc/plantuml.jar
 
 .vscode
 .idea
 .DS_Store
-/platform-api
