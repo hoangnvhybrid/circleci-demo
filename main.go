@@ -12,6 +12,10 @@ func main() {
 		c.String(200, "Hello,World!")
 	})
 
+	r.GET("/welcome", func(c *gin.Context) {
+		c.String(200, "Page welcome!!!")
+	})
+
 	r.Run(":8086")
 
 }
