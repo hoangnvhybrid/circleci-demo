@@ -25,8 +25,11 @@ func main() {
 			"title": "Main website",
 		})
 	})
-
+	// heroku se dung cong mac dinh, nen phai dung lenh duoi de lay, khi chay local thi nho set lai port
 	port := os.Getenv("PORT")
+	if port == "" {
+		port = "8086"
+	}
 	r.Run(":" + port)
 
 }
