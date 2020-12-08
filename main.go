@@ -11,6 +11,7 @@ func main() {
 	r.GET("/", func(c *gin.Context) {
 		c.String(200, "Hello,World!")
 	})
+	fmt
 	r.Run(":8086")
 
 }
